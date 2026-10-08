@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Wild Woman | Women's Retreat, Namibia · Retreats in the Wild</title>
-<meta name="description" content="A five-night initiation for the woman who has outgrown who she has been. 26 to 31 March 2027, Nambwa Tented Lodge, Bwabwata National Park, Namibia.">
+<title>Thank you | Wild Woman · Retreats in the Wild</title>
+<meta name="robots" content="noindex">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Archivo:wght@400;500;600&family=EB+Garamond:wght@400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Archivo:wght@400;500;600&family=EB+Garamond:wght@400&display=swap" rel="stylesheet">
 <style>
 @font-face{font-family:"TAN-PEARL";src:url("tan-pearl.otf") format("opentype"),url("https://assets.cdn.filesafe.space/MmHlkJRzJcutIk6QueRO/media/6a6110ad64ab3b1036f30b45.otf") format("opentype");font-display:swap}
 
@@ -170,7 +170,7 @@ h1,h2,h3,blockquote{text-wrap:balance}
 .day .pin{width:11px;height:11px;border-radius:50%;margin:18px 0 20px;background:#fff;border:1.5px solid var(--gold);position:relative;z-index:1;box-shadow:0 0 0 5px #fff}
 .day.th .pin{background:var(--gold)}
 .day .tn{display:none;font-family:var(--sans);font-size:9.5px;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
-.day .theme{font-family:var(--display);font-size:clamp(16px,1.45vw,20px);line-height:1.3;color:var(--text);white-space:nowrap}
+.day .theme{font-family:var(--display);font-size:20px;line-height:1.3;color:var(--text)}
 .day.end .num{color:#b3ad9f}
 .day.end .theme{font-family:var(--serif);font-style:italic;font-size:20px;color:var(--muted)}
 .day.end .pin{border-color:rgba(201,154,75,.6)}
@@ -327,7 +327,7 @@ footer p{font-family:var(--sans);font-size:12px;letter-spacing:.04em}
   .day .num{grid-column:1;grid-row:2;font-size:38px;margin:0;align-self:start}
   .day .pin{grid-column:2;grid-row:1/3;margin:0;justify-self:center}
   .day .tn{display:block;grid-column:3;grid-row:1;align-self:end}
-  .day .theme{grid-column:3;grid-row:2;margin:0;align-self:start;font-size:20px;white-space:normal}
+  .day .theme{grid-column:3;grid-row:2;margin:0;align-self:start}
   .day .hol{grid-column:3;grid-row:3;margin-top:4px}
 }
 @media (max-width:900px){
@@ -415,290 +415,197 @@ footer p{font-family:var(--sans);font-size:12px;letter-spacing:.04em}
   .sh{font-size:31px}
   .days::before{left:83px}
 }
+
+/* ---------- thank-you page ---------- */
+.nav.solid{background:rgba(14,15,12,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.ty-hero{position:relative;min-height:min(86vh,820px);display:flex;align-items:flex-end;color:#fff;isolation:isolate;padding:150px 0 90px}
+.ty-hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 40%;z-index:-2}
+.ty-hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(0deg,rgba(10,9,7,.92) 0%,rgba(10,9,7,.55) 50%,rgba(10,9,7,.35) 100%)}
+.ty-hero .eyebrow{display:flex;align-items:center;gap:12px}
+.ty-hero .eyebrow::before{content:"";width:34px;height:1px;background:var(--gold)}
+.ty-hero h1{font-family:var(--display);font-weight:400;font-size:clamp(52px,7.4vw,104px);line-height:1.05;margin-top:20px}
+.ty-hero h1 em{font-style:normal;color:var(--gold)}
+.ty-hero p.lead{max-width:600px;margin-top:22px;color:var(--on-dark);letter-spacing:.02em}
+.check{width:58px;height:58px;border-radius:50%;border:1px solid var(--gold);display:grid;place-items:center;margin-bottom:28px;background:rgba(201,154,75,.12)}
+.check svg{width:24px;height:24px;color:var(--gold)}
+.next{background:var(--cream)}
+.steps-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(16px,2vw,26px);margin-top:64px;counter-reset:s}
+.step-card{position:relative;background:#fff;border-radius:var(--radius);padding:30px 26px 30px;border:1px solid rgba(201,154,75,.2);display:flex;flex-direction:column}
+.step-card .big{font-family:var(--serif);font-style:italic;font-size:76px;line-height:.9;color:var(--gold);letter-spacing:-.02em}
+.step-card h3{font-family:var(--display);font-weight:400;font-size:23px;line-height:1.3;color:#1d1d1b;margin-top:18px}
+.step-card p{font-size:18px;line-height:1.55;color:#4a463f;margin-top:10px;letter-spacing:.02em}
+.step-card .contact{margin-top:14px;display:grid;gap:6px;font-family:var(--sans);font-size:13.5px}
+.step-card .contact a{color:var(--text);text-decoration:none;display:flex;align-items:center;gap:8px}
+.step-card .contact a:hover{color:#9a6f28}
+.step-card .contact svg{width:14px;height:14px;color:var(--gold);flex:none}
+.step-card .go{margin-top:auto;padding-top:18px;font-family:var(--display);font-size:17px;color:#9a6f28;text-decoration:none;display:inline-flex;align-items:center;gap:8px}
+.step-card .go svg{width:14px;height:14px;transition:transform .25s}
+.step-card .go:hover svg{transform:translateY(3px)}
+.book{background:var(--sand);padding-top:0}
+.book-card{display:grid;grid-template-columns:1.1fr 1fr;border-radius:var(--radius);overflow:hidden;background:var(--navy);color:#fff}
+.book-card .img{position:relative;min-height:440px}
+.book-card .img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.book-body{padding:clamp(32px,4.5vw,60px);display:flex;flex-direction:column;justify-content:center}
+.book-body h2{font-family:var(--display);font-weight:400;font-size:clamp(30px,3vw,40px);line-height:1.25;margin-top:18px}
+.book-body h2 em{font-style:normal;color:var(--gold)}
+.prices{display:grid;grid-template-columns:1fr 1fr;margin-top:26px;border-top:1px solid rgba(201,154,75,.3);border-bottom:1px solid rgba(201,154,75,.3)}
+.prices>div{padding:18px 0}
+.prices>div+div{padding-left:24px;border-left:1px solid rgba(201,154,75,.25)}
+.prices small{display:block;font-family:var(--sans);font-size:10.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--on-dark-muted)}
+.prices b{display:block;font-family:var(--serif);font-weight:600;font-size:40px;line-height:1.1;color:var(--paper);margin-top:6px}
+.prices span{font-family:var(--sans);font-size:12px;color:var(--on-dark-muted)}
+.book-btns{display:grid;gap:10px;margin-top:28px}
+.book-btns .btn{width:100%;white-space:nowrap}
+.book-btns .btn-outline{color:var(--paper);border-color:rgba(245,241,232,.6)}
+.book-btns .btn-outline:hover{background:var(--paper);color:var(--text);border-color:var(--paper)}
+.book-note{margin-top:18px;font-size:17px;font-style:italic;color:var(--on-dark);line-height:1.5}
+.wait{background:var(--sand);padding-top:0}
+.wait-card{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,5vw,70px);align-items:center}
+.wait-card figure{border-radius:var(--radius);overflow:hidden;aspect-ratio:5/4}
+.wait-card img{width:100%;height:100%;object-fit:cover}
+.wait-card h2{font-family:var(--display);font-weight:400;font-size:clamp(34px,3.6vw,46px);line-height:1.2;color:#1d1d1b;margin-top:14px}
+.wait-card h2 em{font-style:normal;color:var(--gold)}
+.wait-card p.copy{margin-top:16px;font-size:20px;color:#4a463f;letter-spacing:.02em;max-width:460px}
+.wait-card .btn{margin-top:30px}
+.signoff{background:var(--olive);color:#fff;text-align:center}
+.signoff blockquote{font-family:var(--display);font-size:clamp(30px,3.6vw,46px);line-height:1.3;max-width:860px;margin:0 auto}
+.signoff blockquote em{font-style:normal;color:var(--gold)}
+.signoff .sig{margin-top:26px;font-family:var(--serif);font-style:italic;font-size:24px;color:var(--gold)}
+.ask{margin-top:80px;padding-top:56px;border-top:1px solid rgba(201,154,75,.2)}
+.ask h3{font-family:var(--display);font-weight:400;font-size:clamp(26px,2.6vw,32px)}
+.ask p{margin-top:10px;color:var(--on-dark);font-size:19px}
+.ask-links{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:26px}
+.ask-links .btn{font-size:16px;padding:14px 24px}
+.ask-links .btn svg{width:16px;height:16px}
+.ask-links .btn-outline{color:var(--paper);border-color:rgba(201,154,75,.6)}
+footer{padding-bottom:40px}
+@media (max-width:1080px){.steps-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:900px){
+  .book-card,.wait-card{grid-template-columns:1fr}
+  .book-card .img{min-height:260px}
+}
+@media (max-width:560px){
+  .ty-hero{padding:130px 0 64px;min-height:auto}
+  .ty-hero h1{font-size:46px}
+  .wait-card .btn{width:100%;font-size:17px;padding:17px 20px;white-space:nowrap}
+  .steps-grid{grid-template-columns:1fr;gap:12px;margin-top:40px}
+  .step-card{padding:24px 22px;display:grid;grid-template-columns:56px 1fr;column-gap:14px}
+  .step-card .big{font-size:58px;grid-row:1/5}
+  .step-card h3{margin-top:4px;font-size:21px}
+  .step-card p{font-size:17px}
+  .prices b{font-size:32px}
+  .prices>div+div{padding-left:16px}
+  .wait-card p.copy{font-size:18px}
+  .ask{margin-top:56px;padding-top:44px}
+  .ask-links .btn{flex:1 1 100%}
+}
 </style>
 </head>
 <body>
 
-<!-- ============ NAV ============ -->
-<header class="nav" id="nav">
+<header class="nav solid" id="nav">
   <div class="wrap">
-    <a href="#top" aria-label="African Monarch Journeys, Retreats in the Wild"><img src="images/logo.png" alt="African Monarch Journeys"></a>
-    <a href="#begin" class="btn">Request my place</a>
+    <a href="index.html" aria-label="Back to Wild Woman"><img src="images/logo.png" alt="African Monarch Journeys"></a>
   </div>
 </header>
 
-<!-- ============ 1. HERO + FORM ============ -->
-<section class="hero" id="top">
-  <div class="hero-bg"><img src="images/wild-woman-header-main-beautiful-woman-around-campfire.jpg" alt="A woman dancing beside a fire in the Namibian bush at night" fetchpriority="high"></div>
-  <div class="wrap hero-grid">
-    <div class="hero-copy">
-      <p class="eyebrow">Retreats in the Wild · Women's retreat, Namibia</p>
-      <h1>Wild Woman</h1>
-      <p class="tagline">Five days. Four thresholds. One wild becoming.</p>
-      <p class="subcopy">A five-night initiation for the woman who has outgrown who she has been. Held in a small circle of women on the Kwando River, in the wild heart of Namibia.</p>
-    </div>
-    <div id="begin-hero" data-form-slot></div>
-  </div>
-  <div class="facts">
-    <ul class="wrap">
-      <li><div class="k">When</div><div class="v">26 to 31 March 2027, over Easter</div></li>
-      <li><div class="k">Where</div><div class="v">Nambwa Tented Lodge, Bwabwata National Park</div></li>
-      <li><div class="k">The circle</div><div class="v">Ten suites. Only 15 places.</div></li>
-      <li><div class="k">Held by</div><div class="v">Rôuxvé and Tinolla</div></li>
-    </ul>
+<!-- ============ HERO ============ -->
+<section class="ty-hero">
+  <img src="images/2-women-back-to-back.jpg" alt="Two women laughing together at sunset" fetchpriority="high">
+  <div class="wrap">
+    <div class="check" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></div>
+    <p class="eyebrow">Wild Woman · 26 to 31 March 2027</p>
+    <h1>Thank you, <em>dear one.</em></h1>
+    <p class="lead">Your details are with us. Something in you said yes to finding out more, and we are honoured you did.</p>
   </div>
 </section>
 
-<!-- ============ 2. THE DATES ============ -->
-<section class="section dates" id="dates">
+<!-- ============ WHAT HAPPENS NEXT ============ -->
+<section class="section next">
   <div class="wrap">
-    <p class="eyebrow center rv">The dates</p>
-    <h2 class="sh rv" style="margin-top:14px">Good Friday to the <em>last day</em> of March</h2>
+    <p class="eyebrow center rv">What happens next</p>
+    <h2 class="sh rv" style="margin-top:14px">Four gentle <em>steps</em></h2>
     <div class="divider rv"><i></i></div>
-    <div class="cal rv">
-      <div class="cal-span" aria-hidden="true"><span>Four thresholds</span></div>
-      <ol class="days">
-        <li class="day end"><span class="dow">Fri</span><span class="num">26</span><span class="pin"></span><span class="tn"></span><span class="theme">Arrival</span><span class="hol">Good Friday</span></li>
-        <li class="day th"><span class="dow">Sat</span><span class="num">27</span><span class="pin"></span><span class="tn">Threshold I</span><span class="theme">The Unraveling</span></li>
-        <li class="day th"><span class="dow">Sun</span><span class="num">28</span><span class="pin"></span><span class="tn">Threshold II</span><span class="theme">The Knowing</span><span class="hol">Easter Sunday</span></li>
-        <li class="day th"><span class="dow">Mon</span><span class="num">29</span><span class="pin"></span><span class="tn">Threshold III</span><span class="theme">The Alchemy</span><span class="hol">Easter Monday</span></li>
-        <li class="day th"><span class="dow">Tue</span><span class="num">30</span><span class="pin"></span><span class="tn">Threshold IV</span><span class="theme">The Rapture</span></li>
-        <li class="day end"><span class="dow">Wed</span><span class="num">31</span><span class="pin"></span><span class="tn"></span><span class="theme">Departure</span></li>
-      </ol>
+    <div class="steps-grid">
+      <article class="step-card rv">
+        <span class="big">01</span>
+        <h3>We reach out personally.</h3>
+        <p>One of our circle will contact you by WhatsApp or phone to hear what drew you here.</p>
+      </article>
+      <article class="step-card rv">
+        <span class="big">02</span>
+        <h3>You ask us anything.</h3>
+        <p>Venetia Howes</p>
+        <div class="contact">
+          <a href="tel:+27829020994"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg>+27 (0)82 902 0994</a>
+          <a href="mailto:venetia@retreatsinthewild.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>venetia@retreatsinthewild.com</a>
+        </div>
+      </article>
+      <article class="step-card rv">
+        <span class="big">03</span>
+        <h3>Already know this is yours?</h3>
+        <p>You can complete your booking now.</p>
+        <a class="go" href="#book">Book my place <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg></a>
+      </article>
+      <article class="step-card rv">
+        <span class="big">04</span>
+        <h3>You decide in your own time.</h3>
+        <p>There is no need to wait for our call. If you are ready, you can secure your place today at the early-bird rate, held for the next five seats.</p>
+      </article>
     </div>
-    <p class="dates-note rv">Five nights. Good Friday and Easter Monday are public holidays in South Africa and across most of the UK and Europe, so the passage asks for fewer days away.</p>
   </div>
 </section>
 
-<!-- ============ 3. WHO IT IS FOR (copy & layout from join page) ============ -->
-<section class="section guided" id="for-you">
-  <div class="narrow">
-    <h2 class="sh rv">You have been <em>guided</em> here,</h2>
-    <div class="divider rv"><i></i></div>
-    <div class="poem rv">
-      <p>The caterpillar does not decide to become a butterfly.<br>She simply surrenders.<br>Cell by cell, certainty by certainty.<br>Until nothing of the old shape remains.</p>
-      <p>This is not metaphor.<br>It is the wisdom of nature. And perhaps,<br>the wisdom of your own becoming.</p>
-      <p>Because you have felt it already.<br>The unraveling.<br>The quiet ache that no achievement could soothe.<br>The life that looks beautiful on paper,<br>yet you no longer recognise it as yours.<br>The questions that visit in the early hours of the morning, beckoning your longing for something more.</p>
-      <p>Not more success, or doing, or striving.<br>But more joy.<br>More beauty.<br>More aliveness.</p>
-      <p>Perhaps what feels like falling apart is just an invitation.<br>To make way for the woman you are destined to become.</p>
-    </div>
-  </div>
+<!-- ============ BOOK ============ -->
+<section class="section book" id="book" style="padding-top:clamp(56px,7vw,90px)">
   <div class="wrap">
-    <div class="pull rv">
-      <img src="images/frame-12-woman-yoga-pose-at-dusk.jpg" alt="A woman alone at the river's edge at dusk" loading="lazy">
-      <div class="txt">
-        <blockquote>You are not looking for an escape. You are looking for an <em>initiation.</em></blockquote>
-        <a href="#begin" class="btn">Request my place</a>
+    <div class="book-card rv">
+      <div class="img"><img src="images/wild-woman-retreat-elegant-boho-woman.jpg" alt="A woman in a flowing kimono at golden hour" loading="lazy"></div>
+      <div class="book-body">
+        <div><span class="pill">Early bird · Next 5 seats</span></div>
+        <h2>Secure your place <em>today.</em></h2>
+        <div class="prices">
+          <div><small>South Africa</small><b>R64,000</b><span>Per person sharing</span></div>
+          <div><small>International</small><b>€3,600</b><span>Per person sharing</span></div>
+        </div>
+        <div class="book-btns">
+          <a class="btn" data-link="BOOK_ZAR" href="#">Book my place (ZAR)</a>
+          <a class="btn btn-outline" data-link="BOOK_EUR" href="#">Book my place (EUR)</a>
+        </div>
+        <p class="book-note">Prefer the payment plan, or a room of your own? Wait for our call and we will arrange it with you.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ============ 4. THE PLACE ============ -->
-<section class="section place" id="place">
-  <div class="wrap">
-    <p class="eyebrow center rv">The place</p>
-    <h2 class="sh rv" style="margin-top:14px">Nambwa. The <em>wild,</em> lived from the inside.</h2>
-    <div class="divider rv"><i></i></div>
-    <p class="lead rv">Ten suites raised five metres above the earth, with no fences between you and the wild. Elephants move beneath you in the night.</p>
-    <p class="body rv">Nambwa Tented Lodge sits in Bwabwata National Park, on sacred land inside the world's largest conservation area for wildlife. You reach it by boat. Once you arrive, everything is held.</p>
-
-    <div class="tiles">
-      <figure class="tile t1 rv"><img src="images/retreats-yoga-around-lake-15-1024x683.jpg" alt="" loading="lazy"><span>Exclusive and secluded</span></figure>
-      <figure class="tile t2 rv"><img src="images/wild-woman-nature-trees.jpg" alt="" loading="lazy"><span>Treetop living among wildlife</span></figure>
-      <figure class="tile t3 rv"><img src="images/overivew-4-boho-woman-sitting-in-bush.jpg" alt="" loading="lazy"><span>Generous space</span></figure>
-      <figure class="tile t4 rv"><img src="images/frame-11-women-doing-yoga.jpg" alt="" loading="lazy"><span>Private decks and views</span></figure>
-      <figure class="tile t5 rv"><img src="images/evening-yoga-2-1024x683.jpg" alt="" loading="lazy"><span>Mornings that begin gently</span></figure>
-      <figure class="tile t6 rv" style="grid-row:span 1"><img src="images/what-to-expect-boho-woman-in-bush.jpg" alt="" loading="lazy" style="object-position:center 60%"><span>Dining as an experience</span></figure>
-    </div>
-
-    <div class="figures rv">
-      <div class="fig"><b>10</b><small>Suites</small></div>
-      <div class="fig"><b>0</b><small>Fences</small></div>
-      <div class="fig"><b>450+</b><small>Bird species</small></div>
-      <div class="fig"><b>30</b><small>Minutes by boat up the Kwando River</small></div>
+<!-- ============ WHILE YOU WAIT ============ -->
+<section class="section wait" style="padding-top:clamp(56px,7vw,90px)">
+  <div class="wrap wait-card">
+    <figure class="rv"><img src="images/overivew-4-boho-woman-sitting-in-bush.jpg" alt="A woman sitting quietly among candles and pampas grass" loading="lazy"></figure>
+    <div class="rv">
+      <p class="eyebrow">While you wait</p>
+      <h2>Take the journey <em>with you</em></h2>
+      <p class="copy">The full story of Wild Woman, the four thresholds and the land that holds them.</p>
+      <a class="btn btn-lg" data-link="BROCHURE" href="#" target="_blank" rel="noopener">Download the brochure (PDF)</a>
     </div>
   </div>
 </section>
 
-<!-- ============ 5. FIVE DAYS ============ -->
-<section class="section journey" id="journey">
+<!-- ============ SIGN-OFF ============ -->
+<section class="section signoff">
   <div class="wrap">
-    <p class="eyebrow center rv">Five days, each with one theme</p>
-    <h2 class="sh rv" style="margin-top:14px">Five days. <em>Four thresholds.</em></h2>
-    <div class="divider rv"><i></i></div>
-    <p class="intro rv">The passage follows the African Monarch butterfly through her metamorphosis. You arrive, then cross four thresholds, one each day.</p>
+    <blockquote class="rv">We would be honoured to walk beside you as your <em>wings unfold.</em></blockquote>
+    <p class="sig rv">Rôuxvé and Tinolla</p>
 
-    <div class="cards">
-      <article class="rw-card c-slate rv">
-        <div class="rw-img"><img src="images/overivew-1-woman-elegant-feet.jpg" alt="Bare feet walking through golden grass" loading="lazy"></div>
-        <div class="rw-body">
-          <div class="rw-meta"><span class="rw-badge">Day 1</span><span class="rw-date">Friday 26 March</span></div>
-          <h3>Arrival</h3>
-          <p class="rw-sub">Received on the riverbank</p>
-          <p class="rw-text">A road through Chobe, then a boat up the Kwando. You settle into the land and into the circle.</p>
-        </div>
-      </article>
-      <article class="rw-card c-forest rv">
-        <div class="rw-img"><img src="images/overivew-2-woman-sitting-cross-legged.jpg" alt="A woman sitting cross-legged beside candles" loading="lazy"></div>
-        <div class="rw-body">
-          <div class="rw-meta"><span class="rw-badge">Day 2</span><span class="rw-date">Saturday 27 March</span></div>
-          <h3>The Unraveling</h3>
-          <p class="rw-sub">Entering the chrysalis</p>
-          <p class="rw-text">You soften your grip on who you have been. Through somatic practice, energy activation and ritual, old identities and expectations begin to dissolve. The nervous system exhales.</p>
-        </div>
-      </article>
-      <article class="rw-card c-brown rv">
-        <div class="rw-img"><img src="images/overivew-3-woman-with-arms-open.jpg" alt="A woman with arms open in dappled forest light" loading="lazy"></div>
-        <div class="rw-body">
-          <div class="rw-meta"><span class="rw-badge">Day 3</span><span class="rw-date">Sunday 28 March</span></div>
-          <h3>The Knowing</h3>
-          <p class="rw-sub">The wings remember the sky</p>
-          <p class="rw-text">Sacred silence, nature immersion and the wisdom of the animals. You learn to trust your body, your womb and your intuition again. The answers have never lived outside of you.</p>
-        </div>
-      </article>
-      <article class="rw-card c-olive rv">
-        <div class="rw-img"><img src="images/sijwa-project-hands-with-beads.jpg" alt="Hands sharing handmade beadwork from the Sijwa Project" loading="lazy"></div>
-        <div class="rw-body">
-          <div class="rw-meta"><span class="rw-badge">Day 4</span><span class="rw-date">Monday 29 March</span></div>
-          <h3>The Alchemy</h3>
-          <p class="rw-sub">Imaginal cells awakening</p>
-          <p class="rw-text">A day devoted to creativity, beauty and conscious creation. Through making, storytelling and sisterhood you discover that nothing is wasted. Even the broken pieces can become art.</p>
-        </div>
-      </article>
-      <article class="rw-card c-terra rv">
-        <div class="rw-img"><img src="images/wild-woman-retreat-elegant-boho-woman.jpg" alt="A woman in a flowing kimono at golden hour" loading="lazy"></div>
-        <div class="rw-body">
-          <div class="rw-meta"><span class="rw-badge">Day 5</span><span class="rw-date">Tuesday 30 March</span></div>
-          <h3>The Rapture</h3>
-          <p class="rw-sub">Opening the wings</p>
-          <p class="rw-text">You claim your sacred yes and your sacred no. A blessing for the woman you have become, then the closing Unmasked Ball on a private wild island.</p>
-        </div>
-      </article>
-      <div class="depart rv">
-        <div><span class="rw-date">Wednesday 31 March</span><p>You return to the world as the woman who emerged.</p></div>
-        <a href="#begin" class="btn btn-outline">Request my place</a>
+    <div class="ask rv">
+      <h3>Questions before we speak?</h3>
+      <p>Venetia Howes is here for you.</p>
+      <div class="ask-links">
+        <a class="btn" href="https://wa.me/27829020994" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.7.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.6-.3Z"/></svg>WhatsApp Venetia</a>
+        <a class="btn btn-outline" href="tel:+27829020994"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg>Call Venetia</a>
+        <a class="btn btn-outline" href="mailto:venetia@retreatsinthewild.com"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>Email Venetia</a>
       </div>
     </div>
-
-    <div class="woven rv">
-      <p class="eyebrow">Woven through every day</p>
-      <p>Sunrise game drives, boat cruises, barefoot bush walks, yoga at Horseshoe Bend, and a visit to the Sijwa Project. Some rituals stay inside the retreat.</p>
-    </div>
-  </div>
-</section>
-
-<!-- ============ 6. CTA BAND ============ -->
-<section class="cta-band">
-  <img src="images/header-woman-dancing-around-fire.jpg" alt="" loading="lazy">
-  <div class="wrap rv">
-    <h2>There is a place in this circle with <em>your name</em> on it.</h2>
-    <a href="#begin" class="btn btn-lg">Hold my place</a>
-    <p class="under">Early bird for the next five seats: <b>R64,000</b> or <b>€3,600</b> per person sharing.</p>
-  </div>
-</section>
-
-<!-- ============ 7. WHO YOU WILL BECOME ============ -->
-<section class="section portraits" id="become">
-  <div class="wrap">
-    <p class="eyebrow center rv">Who you will become</p>
-    <h2 class="sh rv" style="margin-top:14px">Portraits of the <em>Wild Woman</em></h2>
-    <div class="divider rv"><i></i></div>
-    <div class="p-grid">
-      <article class="p-card rv"><figure><img src="images/wild-woman-retreat-boho-woman-in-bush.jpg" alt="" loading="lazy"></figure><span class="n" aria-hidden="true">01</span><h3>A woman who trusts herself.</h3><p>You stop seeking answers from everyone around you.</p></article>
-      <article class="p-card rv"><figure><img src="images/wild-woman-retreat-woman-with-arms-open.jpg" alt="" loading="lazy"></figure><span class="n" aria-hidden="true">02</span><h3>A woman who feels deeply alive.</h3><p>No longer postponing happiness for some future destination.</p></article>
-      <article class="p-card rv"><figure><img src="images/wild-woman-what-to-pack-01-boho-jewels.jpg" alt="" loading="lazy"></figure><span class="n" aria-hidden="true">03</span><h3>A woman connected to her creative power.</h3><p>Your life becomes a work of art, made through devotion and not force.</p></article>
-      <article class="p-card rv"><figure><img src="images/wild-woman-close-up-elegant-feet-walking.jpg" alt="" loading="lazy"></figure><span class="n" aria-hidden="true">04</span><h3>A woman at home in her body.</h3><p>Living from peace and presence, not stress and survival.</p></article>
-      <article class="p-card rv"><figure><img src="images/wild-woman-retreat-beautiful-boho-woman.jpg" alt="" loading="lazy"></figure><span class="n" aria-hidden="true">05</span><h3>A woman who embraces every season.</h3><p>Ageing is not a diminishment. Menopause is not an ending.</p></article>
-      <article class="p-card rv"><figure><img src="images/wild-woman-retreat-boho-woman-in-bush-1.jpg" alt="" loading="lazy"></figure><span class="n" aria-hidden="true">06</span><h3>A woman who belongs.</h3><p>To herself, to the earth, and to a circle of women.</p></article>
-    </div>
-    <p class="swipe-hint">Swipe to see all six</p>
-  </div>
-</section>
-
-<!-- ============ 8. YOUR GUIDES ============ -->
-<section class="section guides" id="guides">
-  <div class="wrap">
-    <p class="eyebrow center rv">Your guides</p>
-    <h2 class="sh rv" style="margin-top:14px">Two women, <em>one circle</em></h2>
-    <div class="divider rv"><i></i></div>
-    <p class="intro rv">One is younger, devoted to energy work, ritual and rebirth. One is older, rooted in the earth, the animals and the initiation of menopause. Every season of womanhood has a place here.</p>
-
-    <div style="margin-top:40px">
-      <div class="fc-row rv">
-        <div class="fc-photo"><img src="images/rouxve-side-headshot.jpg" alt="Rôuxvé, Priestess" loading="lazy"></div>
-        <div>
-          <p class="eyebrow">Priestess</p>
-          <h3 class="fc-name">Rôuxvé</h3>
-          <p class="fc-bio">Once a management consultant who could solve any problem on a spreadsheet and still felt something quietly starving underneath. Her own unravelling led her into years of shamanism and tantra. Her work weaves energy healing, feminine embodiment, nervous system wisdom and ritual. She now guides women through the passage that remade her.</p>
-        </div>
-      </div>
-      <div class="fc-row rev rv">
-        <div class="fc-photo">
-          <!-- TODO: replace with Tinolla's portrait -->
-          <div class="mono" aria-hidden="true">
-            <svg viewBox="0 0 100 70" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M50 18v44"/><path d="M50 22C42 6 18 2 8 8c-6 4 2 22 14 26-8 2-12 12-6 18 8 6 26-4 34-20"/><path d="M50 22C58 6 82 2 92 8c6 4-2 22-14 26 8 2 12 12 6 18-8 6-26-4-34-20"/><path d="M48 18c-2-6-6-10-10-12M52 18c2-6 6-10 10-12"/></svg>
-          </div>
-        </div>
-        <div>
-          <p class="eyebrow">Keeper of the Land</p>
-          <h3 class="fc-name">Tinolla Rodgers</h3>
-          <p class="fc-bio">A hotelier for more than thirty years, founder of African Monarch Journeys, visionary behind the Sijwa Project, and a certified ThetaHealing® Practitioner. Five months into her marriage, her husband was diagnosed with two cancers. After his passing she led the lodges alone, through doubt, exhaustion and menopause. This land is where she reclaimed herself, and why Wild Woman exists.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="closing rv">
-      <p>Pain can become a portal. Endings can become beginnings. <em>We know, because we have lived it.</em></p>
-    </div>
-  </div>
-</section>
-
-<!-- ============ REPEAT FORM ============ -->
-<section class="section begin" id="begin">
-  <div class="wrap begin-grid">
-    <div class="begin-visual rv">
-      <img src="images/wild-woman-retreat-woman-in-bush-with-candles.jpg" alt="A woman standing among candles and smoke in the bush" loading="lazy">
-      <div class="cap">
-        <p class="eyebrow">26 to 31 March 2027 · Namibia</p>
-        <h2 style="margin-top:10px">When you are ready, dear one, <em>begin here.</em></h2>
-        <ul>
-          <li>All-inclusive except flights</li>
-          <li>Ten suites. Only 15 places.</li>
-          <li>We will contact you personally about your place</li>
-        </ul>
-      </div>
-    </div>
-    <div class="rv" data-form-slot></div>
-  </div>
-</section>
-
-<!-- ============ GALLERY ============ -->
-<section class="section gallery" id="gallery">
-  <div class="wrap">
-    <h2 class="sh rv">We will laugh. We will dance. We will rest. We will <em>remember.</em></h2>
-    <div class="divider rv"><i></i></div>
-    <div class="g-grid">
-      <figure class="g1 rv"><img src="images/2-women-back-to-back.jpg" alt="Two women laughing back to back at sunset" loading="lazy"></figure>
-      <figure class="rv"><img src="images/evening-yoga-2-1024x683.jpg" alt="Women raising their arms at the water's edge at dusk" loading="lazy"></figure>
-      <figure class="rv"><img src="images/wild-woman-herbs-faq.jpg" alt="A long table of herbs and offerings" loading="lazy"></figure>
-      <figure class="g4 rv"><img src="images/frame-11-women-doing-yoga.jpg" alt="Yoga beside the river" loading="lazy"></figure>
-      <figure class="rv"><img src="images/header-woman-dancing-around-fire.jpg" alt="Dancing around the fire at night" loading="lazy"></figure>
-      <figure class="g6 rv"><img src="images/retreats-yoga-around-lake-15-1024x683.jpg" alt="Morning yoga beside the lake" loading="lazy"></figure>
-      <figure class="rv"><img src="images/wild-woman-retreat-boho-women-walking-in-bush.jpg" alt="Women walking together through the bush" loading="lazy"></figure>
-      <figure class="g8 rv"><img src="images/wild-woman-retreat-rouxve-holding-feathers.jpg" alt="Ritual with feathers" loading="lazy"></figure>
-    </div>
-    <div class="actions rv"><a href="#begin" class="btn btn-lg">Request my place</a></div>
-  </div>
-</section>
-
-<!-- ============ REPEAT CTA BLOCK ============ -->
-<section class="cta-band">
-  <img src="images/wild-woman-retreat-overview-woman-with-arms-open.jpg" alt="" loading="lazy">
-  <div class="wrap rv">
-    <h2>There is a place in this circle with <em>your name</em> on it.</h2>
-    <a href="#begin" class="btn btn-lg">Hold my place</a>
-    <p class="under">Early bird for the next five seats: <b>R64,000</b> or <b>€3,600</b> per person sharing.</p>
   </div>
 </section>
 
@@ -709,177 +616,15 @@ footer p{font-family:var(--sans);font-size:12px;letter-spacing:.04em}
   </div>
 </footer>
 
-<div class="m-cta" id="mcta">
-  <small><b>Early bird</b>Next five seats · R64,000 / €3,600</small>
-  <a href="#begin" class="btn">Hold my place</a>
-</div>
-
-<!-- ============ FORM TEMPLATE (rendered into both slots) ============ -->
-<template id="form-tpl">
-  <form class="form-card ww-form" novalidate>
-    <h2 class="form-title">Begin here</h2>
-    <p class="form-kicker">Three gentle steps. Two minutes.</p>
-    <div class="steps" aria-hidden="true"><span class="on"></span><span></span><span></span></div>
-    <p class="step-label">Step <b data-cur>1</b> of 3</p>
-
-    <!-- Step 1 -->
-    <fieldset class="step active" data-step="1">
-      <legend class="q">Are you willing to invest in your metamorphosis?</legend>
-      <p class="q-note">Wild Woman is all-inclusive except flights. The next five seats are held at the <b>early-bird rate</b>.</p>
-      <div class="fare">
-        <div class="fare-top"><span class="pill">Early bird · Next 5 seats</span><span class="pps">Per person sharing</span></div>
-        <div class="fare-cells">
-          <div><small>South Africa</small><b class="amt">R64,000</b><span class="std">Standard <s>R80,000</s></span></div>
-          <div><small>International</small><b class="amt">€3,600</b><span class="std">Standard <s>€4,000</s></span></div>
-        </div>
-      </div>
-      <div class="options" role="radiogroup">
-        <label class="opt"><input type="radio" name="investment" value="Yes, I am ready" required><span class="dot"></span>Yes, I am ready</label>
-        <label class="opt"><input type="radio" name="investment" value="Yes, with a payment plan"><span class="dot"></span>Yes, with a payment plan</label>
-        <label class="opt"><input type="radio" name="investment" value="Not at this time"><span class="dot"></span>Not at this time</label>
-      </div>
-      <p class="soft-note" data-soft>Thank you for your honesty. You are still welcome to leave your details and we will keep you close for future circles.</p>
-    </fieldset>
-
-    <!-- Step 2 -->
-    <fieldset class="step" data-step="2">
-      <legend class="q">Where can we reach you?</legend>
-      <p class="q-note">We will contact you personally about your place.</p>
-      <div class="grid2">
-        <label class="field"><span>First name</span><input name="first_name" autocomplete="given-name" required></label>
-        <label class="field"><span>City</span><input name="city" autocomplete="address-level2" required></label>
-      </div>
-      <label class="field"><span>Phone or WhatsApp, with country code</span><input name="phone" type="tel" autocomplete="tel" placeholder="+27 82 123 4567" required></label>
-      <label class="field"><span>Email</span><input name="email" type="email" autocomplete="email" required></label>
-    </fieldset>
-
-    <!-- Step 3 -->
-    <fieldset class="step" data-step="3">
-      <legend class="q">Are you travelling alone?</legend>
-      <p class="q-note">Coming on your own is welcome. The circle is small, and you are received on the riverbank.</p>
-      <div class="options">
-        <label class="opt"><input type="radio" name="travelling" value="Yes, on my own" required><span class="dot"></span>Yes, on my own</label>
-        <label class="opt"><input type="radio" name="travelling" value="With a friend, sister or daughter"><span class="dot"></span>With a friend, sister or daughter</label>
-        <label class="opt"><input type="radio" name="travelling" value="Not sure yet"><span class="dot"></span>Not sure yet</label>
-      </div>
-      <p class="q mt">What is calling you to join? <span style="font-weight:400;font-style:italic;font-size:18px;color:var(--muted)">(choose all that feel true)</span></p>
-      <div class="chips" style="margin-top:14px">
-        <label class="opt check"><input type="checkbox" name="calling" value="I am in a transition"><span class="dot"></span>I am in a transition</label>
-        <label class="opt check"><input type="checkbox" name="calling" value="I need a change"><span class="dot"></span>I need a change</label>
-        <label class="opt check"><input type="checkbox" name="calling" value="Menopause"><span class="dot"></span>Menopause</label>
-        <label class="opt check"><input type="checkbox" name="calling" value="My children have left home"><span class="dot"></span>My children have left home</label>
-        <label class="opt check"><input type="checkbox" name="calling" value="A relationship has ended"><span class="dot"></span>A relationship has ended</label>
-        <label class="opt check"><input type="checkbox" name="calling" value="Loss or grief"><span class="dot"></span>Loss or grief</label>
-        <label class="opt check"><input type="checkbox" name="calling" value="A work chapter is closing"><span class="dot"></span>A work chapter is closing</label>
-        <label class="opt check"><input type="checkbox" name="calling" value="I am tired of holding it all"><span class="dot"></span>I am tired of holding it all</label>
-        <label class="opt check"><input type="checkbox" name="calling" value="Nothing is wrong, yet something is missing"><span class="dot"></span>Nothing is wrong, yet something is missing</label>
-        <label class="opt check"><input type="checkbox" name="calling" value="I want to feel alive again"><span class="dot"></span>I want to feel alive again</label>
-      </div>
-      <label class="field mt"><span>Anything you would like us to know (optional)</span><textarea name="message"></textarea></label>
-    </fieldset>
-
-    <p class="form-error" role="alert" data-err></p>
-    <div class="form-actions">
-      <button type="button" class="back" data-back hidden>Back</button>
-      <button type="button" class="btn" data-next>Continue</button>
-      <button type="submit" class="btn" data-submit hidden>Request my place.</button>
-    </div>
-    <p class="reassure"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>Private and unhurried. No payment is taken here.</p>
-  </form>
-</template>
-
 <script>
-/* ---------- config ---------- */
-const THANK_YOU_URL = "thank-you.html";
-// Set this to your CRM / form webhook (e.g. HighLevel inbound webhook). Leave empty to redirect only.
-const FORM_ENDPOINT = "";
+/* ---------- config: replace with the live booking and brochure links ---------- */
+const LINKS = {
+  BOOK_ZAR: "https://join.retreatsinthewild.com/wild-woman-join",
+  BOOK_EUR: "https://join.retreatsinthewild.com/wild-woman-join",
+  BROCHURE: "https://join.retreatsinthewild.com/wild-woman-join"
+};
+document.querySelectorAll("[data-link]").forEach(a => a.href = LINKS[a.dataset.link]);
 
-/* ---------- render forms ---------- */
-const tpl = document.getElementById("form-tpl");
-document.querySelectorAll("[data-form-slot]").forEach((slot, i) => {
-  const node = tpl.content.cloneNode(true);
-  node.querySelectorAll("input[type=radio]").forEach(r => r.name = r.name + "_" + i);
-  slot.appendChild(node);
-  initForm(slot.querySelector("form"), i);
-});
-
-function initForm(form, idx) {
-  const steps = [...form.querySelectorAll(".step")];
-  const bars = [...form.querySelectorAll(".steps span")];
-  const cur = form.querySelector("[data-cur]");
-  const next = form.querySelector("[data-next]");
-  const back = form.querySelector("[data-back]");
-  const submit = form.querySelector("[data-submit]");
-  const err = form.querySelector("[data-err]");
-  const soft = form.querySelector("[data-soft]");
-  let s = 0;
-
-  form.addEventListener("change", e => {
-    if (e.target.name === "investment_" + idx) soft.classList.toggle("show", e.target.value === "Not at this time");
-    err.textContent = "";
-  });
-
-  function show(n) {
-    steps.forEach((el, i) => el.classList.toggle("active", i === n));
-    bars.forEach((b, i) => b.classList.toggle("on", i <= n));
-    cur.textContent = n + 1;
-    back.hidden = n === 0;
-    next.hidden = n === steps.length - 1;
-    submit.hidden = n !== steps.length - 1;
-    s = n;
-  }
-
-  function valid(n) {
-    const step = steps[n];
-    err.textContent = "";
-    step.querySelectorAll(".field").forEach(f => f.classList.remove("err"));
-    const radios = step.querySelectorAll("input[type=radio][required]");
-    for (const r of radios) {
-      if (!step.querySelector(`input[name="${r.name}"]:checked`)) { err.textContent = "Please choose the option that feels true."; return false; }
-    }
-    for (const inp of step.querySelectorAll(".field input[required]")) {
-      const bad = !inp.value.trim() || (inp.type === "email" && !/^\S+@\S+\.\S+$/.test(inp.value)) || (inp.type === "tel" && inp.value.replace(/\D/g, "").length < 7);
-      if (bad) { inp.closest(".field").classList.add("err"); err.textContent = "Please complete each field so we can reach you."; inp.focus(); return false; }
-    }
-    return true;
-  }
-
-  next.addEventListener("click", () => { if (valid(s)) show(s + 1); });
-  back.addEventListener("click", () => show(s - 1));
-
-  form.addEventListener("submit", async e => {
-    e.preventDefault();
-    if (!valid(s)) return;
-    const fd = new FormData(form);
-    const data = {
-      investment: fd.get("investment_" + idx),
-      first_name: fd.get("first_name"), city: fd.get("city"), phone: fd.get("phone"), email: fd.get("email"),
-      travelling: fd.get("travelling_" + idx),
-      calling: fd.getAll("calling").join("; "),
-      message: fd.get("message"),
-      source: "Wild Woman landing page"
-    };
-    submit.disabled = true; submit.textContent = "Sending…";
-    if (FORM_ENDPOINT) {
-      try { await fetch(FORM_ENDPOINT, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(data) }); } catch (_) {}
-    }
-    window.location.href = THANK_YOU_URL;
-  });
-}
-
-/* ---------- nav + mobile CTA ---------- */
-const nav = document.getElementById("nav"), mcta = document.getElementById("mcta");
-const hero = document.getElementById("top"), begin = document.getElementById("begin");
-let beginVisible = false;
-new IntersectionObserver(([e]) => { beginVisible = e.isIntersecting; onScroll(); }, { threshold: .15 }).observe(begin);
-function onScroll() {
-  const y = window.scrollY;
-  nav.classList.toggle("scrolled", y > 60);
-  mcta.classList.toggle("show", y > hero.offsetHeight * .9 && !beginVisible);
-}
-addEventListener("scroll", onScroll, { passive: true }); onScroll();
-
-/* ---------- reveal ---------- */
 const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } }), { rootMargin: "0px 0px -8% 0px" });
 document.querySelectorAll(".rv").forEach(el => io.observe(el));
 </script>
