@@ -208,28 +208,29 @@ h1,h2,h3,blockquote{text-wrap:balance}
 .fig b{display:block;font-family:var(--serif);font-weight:500;font-size:clamp(40px,4.4vw,58px);line-height:1;color:var(--gold)}
 .fig small{display:block;margin-top:10px;font-family:var(--sans);font-size:11px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--on-dark-muted)}
 
-/* ---------- five days (rw-card system) ---------- */
-.journey{background:var(--sand)}
-.journey .intro{max-width:700px;margin:26px auto 0;text-align:center;color:#4a463f;letter-spacing:.02em}
-.cards{display:grid;gap:26px;margin-top:64px}
-.rw-card{display:grid;grid-template-columns:1fr 1fr;border-radius:var(--radius);overflow:hidden;color:var(--paper);min-height:420px}
-.rw-card:nth-child(even) .rw-img{order:2}
-.rw-img{position:relative;min-height:320px}
-.rw-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
-.rw-body{padding:clamp(32px,4.5vw,60px);display:flex;flex-direction:column;justify-content:center}
-.rw-meta{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
-.rw-badge{font-family:var(--sans);font-size:10.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:#2B2B2B;background:rgba(255,255,255,.92);padding:5px 14px;border-radius:999px}
-.rw-date{font-family:var(--sans);font-size:11px;font-weight:500;letter-spacing:.04em;text-transform:uppercase;color:var(--on-dark-muted)}
-.rw-card h3{font-family:var(--display);font-weight:400;font-size:clamp(30px,3vw,38px);line-height:1.25;color:var(--paper);margin-top:18px}
-.rw-card .rw-sub{font-family:var(--serif);font-style:italic;font-weight:500;font-size:20px;color:var(--gold);margin-top:4px}
-.rw-card p.rw-text{font-size:18px;line-height:1.6;letter-spacing:.08em;color:var(--on-dark);margin-top:18px}
+/* ---------- five days: one-screen column layout ---------- */
+.journey{background:var(--sand);padding:clamp(52px,5vw,64px) 0}
+.j-head{display:grid;grid-template-columns:1.25fr 1fr;gap:clamp(24px,5vw,80px);align-items:end}
+@media (min-width:1100px){.j-head .sh{white-space:nowrap}}
+.j-head .sh{text-align:left;margin-top:10px;font-size:clamp(32px,3.4vw,44px)}
+.j-head .intro{color:#4a463f;letter-spacing:.02em;font-size:19px;line-height:1.55;border-left:1px solid var(--gold-soft);padding-left:28px}
+.j-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:28px}
+.jd{border-radius:18px;overflow:hidden;color:var(--paper);display:flex;flex-direction:column}
+.jd figure{position:relative;height:clamp(110px,9.2vw,136px);flex:none}
+.jd figure img{width:100%;height:100%;object-fit:cover}
+.jd .dn{position:absolute;left:14px;top:12px;font-family:var(--sans);font-size:10px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#2B2B2B;background:rgba(255,255,255,.92);padding:5px 11px;border-radius:999px}
+.jd-body{padding:16px 18px 20px;display:flex;flex-direction:column;flex:1}
+.jd .when{font-family:var(--sans);font-size:10.5px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;color:var(--on-dark-muted)}
+.jd h3{font-family:var(--display);font-weight:400;font-size:clamp(21px,1.75vw,25px);line-height:1.2;color:var(--paper);margin-top:8px}
+.jd .sub{font-family:var(--serif);font-style:italic;font-weight:500;font-size:17px;line-height:1.3;color:var(--gold);margin-top:4px}
+.jd p.t{font-size:15.5px;line-height:1.45;letter-spacing:.01em;color:var(--on-dark);margin-top:10px}
 .c-slate{background:var(--slate)}.c-forest{background:var(--forest)}.c-brown{background:var(--brown)}.c-olive{background:var(--olive)}.c-terra{background:var(--terra)}
-.depart{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;border:1px solid rgba(201,154,75,.5);border-radius:var(--radius);padding:28px clamp(24px,4vw,48px);background:#fff}
-.depart .rw-date{color:var(--muted)}
-.depart>div{flex:1 1 420px}
-.depart p{font-family:var(--display);font-size:clamp(22px,2.2vw,28px);line-height:1.25;color:var(--text)}
-.woven{max-width:820px;margin:64px auto 0;text-align:center}
-.woven p:not(.eyebrow){margin-top:12px;font-size:20px;color:#4a463f;letter-spacing:.02em}
+.j-foot{display:grid;grid-template-columns:1.1fr 1.4fr auto;gap:28px;align-items:center;margin-top:12px;background:#fff;border:1px solid rgba(201,154,75,.35);border-radius:18px;padding:16px 24px}
+.j-foot .k{display:block;font-family:var(--sans);font-size:10.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#9a6f28}
+.j-foot .ret{font-family:var(--display);font-size:19px;line-height:1.3;color:var(--text);margin-top:4px}
+.j-foot .wov{font-size:16.5px;line-height:1.45;color:#4a463f;margin-top:4px;letter-spacing:.01em}
+.j-foot>div+div{border-left:1px solid rgba(201,154,75,.25);padding-left:28px}
+.j-foot .btn{font-size:16px;padding:14px 24px;white-space:nowrap}
 
 /* ---------- CTA band ---------- */
 .cta-band{position:relative;color:#fff;text-align:center;padding:clamp(110px,14vw,170px) 0;isolation:isolate;overflow:hidden}
@@ -248,8 +249,10 @@ h1,h2,h3,blockquote{text-wrap:balance}
 .p-card figure{position:relative;border-radius:var(--radius);overflow:hidden;aspect-ratio:4/5;background:#ddd}
 .p-card img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
 .p-card:hover img{transform:scale(1.04)}
-.p-card .n{position:absolute;right:16px;top:calc(125cqw - 62px);z-index:1;font-family:var(--serif);font-style:italic;font-weight:400;font-size:104px;line-height:1;letter-spacing:-.02em;color:var(--gold);text-shadow:0 6px 24px rgba(20,14,6,.18);pointer-events:none}
-.p-card h3{font-family:var(--display);font-weight:400;font-size:24px;line-height:1.3;color:#1d1d1b;margin-top:20px;padding-right:96px}
+.p-head{display:flex;align-items:flex-start;gap:14px;margin-top:20px}
+.p-card .n{flex:none;font-family:var(--serif);font-style:italic;font-weight:400;font-size:74px;line-height:.78;letter-spacing:-.03em;color:var(--gold);min-width:68px}
+.p-card h3{font-family:var(--display);font-weight:400;font-size:24px;line-height:1.3;color:#1d1d1b;padding-top:2px}
+.p-card .p-head+p{padding-left:84px}
 .swipe-hint{display:none;align-items:center;justify-content:center;gap:8px;margin-top:18px;font-family:var(--sans);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
 .swipe-hint::after{content:"";width:28px;height:1px;background:var(--gold)}
 .p-card p{font-size:18px;line-height:1.55;color:#4a463f;margin-top:8px;letter-spacing:.02em}
@@ -339,9 +342,14 @@ footer p{font-family:var(--sans);font-size:12px;letter-spacing:.04em}
   .facts li{border-left:0;padding:18px 0;border-top:1px solid rgba(201,154,75,.14)}
   .facts li:nth-child(even){padding-left:18px;border-left:1px solid rgba(201,154,75,.14)}
   .facts li:nth-child(-n+2){border-top:0}
-  .pull,.rw-card,.begin-grid{grid-template-columns:1fr}
-  .rw-card:nth-child(even) .rw-img{order:0}
-  .rw-img{min-height:280px}
+  .pull,.begin-grid{grid-template-columns:1fr}
+  .j-head{grid-template-columns:1fr;gap:16px}
+  .j-head .intro{font-size:18px;padding-left:18px}
+  .j-grid{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:minmax(260px,42%);overflow-x:auto;scroll-snap-type:x mandatory;margin:32px -24px 0;padding:0 24px 8px;scroll-padding:0 24px;scrollbar-width:none}
+  .j-grid::-webkit-scrollbar{display:none}
+  .jd{scroll-snap-align:start}
+  .j-foot{grid-template-columns:1fr;gap:16px}
+  .j-foot>div+div{border-left:0;padding-left:0;border-top:1px solid rgba(201,154,75,.25);padding-top:16px}
   .pull img{min-height:320px}
   .tiles{grid-template-columns:1fr 1fr;grid-auto-rows:220px}
   .t1,.t2,.t3,.t4,.t5{grid-column:span 1;grid-row:span 1}
@@ -387,22 +395,20 @@ footer p{font-family:var(--sans);font-size:12px;letter-spacing:.04em}
   .pull blockquote{font-size:27px}
   .figures{margin-top:48px}
   .fig{padding:24px 10px}
-  .rw-img{min-height:220px}
-  .rw-body{padding:28px 22px 30px}
-  .rw-card p.rw-text{font-size:17px;letter-spacing:.04em}
-  .rw-card .rw-sub{font-size:18px}
-  .cards{gap:16px;margin-top:44px}
-  .depart{padding:24px 22px}
-  .depart .btn{width:100%}
-  .woven{margin-top:44px}
+  .journey{padding:60px 0}
+  .j-grid{grid-auto-columns:80%;margin:28px -16px 0;padding:0 16px 8px;scroll-padding:0 16px}
+  .j-foot{padding:20px}
+  .j-foot .btn{width:100%}
   .cta-band{padding:96px 0}
   .cta-band .under{font-size:12px}
   /* portraits become a swipeable row */
   .p-grid{display:grid;grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:78%;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;margin:44px -16px 0;padding:0 16px 8px;scroll-padding:0 16px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
   .p-grid::-webkit-scrollbar{display:none}
   .p-card{scroll-snap-align:start}
-  .p-card h3{font-size:21px;margin-top:16px;padding-right:76px}
-  .p-card .n{font-size:84px;top:calc(125cqw - 50px)}
+  .p-card h3{font-size:21px}
+  .p-head{margin-top:16px;gap:12px}
+  .p-card .n{font-size:60px;min-width:56px}
+  .p-card .p-head+p{padding-left:68px}
   .p-card p{font-size:17px}
   .swipe-hint{display:flex}
   .fc-bio{text-align:left;font-size:15px}
@@ -521,68 +527,42 @@ footer p{font-family:var(--sans);font-size:12px;letter-spacing:.04em}
 </section>
 
 <!-- ============ 5. FIVE DAYS ============ -->
-<section class="section journey" id="journey">
+<section class="journey" id="journey">
   <div class="wrap">
-    <p class="eyebrow center rv">Five days, each with one theme</p>
-    <h2 class="sh rv" style="margin-top:14px">Five days. <em>Four thresholds.</em></h2>
-    <div class="divider rv"><i></i></div>
-    <p class="intro rv">The passage follows the African Monarch butterfly through her metamorphosis. You arrive, then cross four thresholds, one each day.</p>
-
-    <div class="cards">
-      <article class="rw-card c-slate rv">
-        <div class="rw-img"><img src="images/overivew-1-woman-elegant-feet.jpg" alt="Bare feet walking through golden grass" loading="lazy"></div>
-        <div class="rw-body">
-          <div class="rw-meta"><span class="rw-badge">Day 1</span><span class="rw-date">Friday 26 March</span></div>
-          <h3>Arrival</h3>
-          <p class="rw-sub">Received on the riverbank</p>
-          <p class="rw-text">A road through Chobe, then a boat up the Kwando. You settle into the land and into the circle.</p>
-        </div>
-      </article>
-      <article class="rw-card c-forest rv">
-        <div class="rw-img"><img src="images/overivew-2-woman-sitting-cross-legged.jpg" alt="A woman sitting cross-legged beside candles" loading="lazy"></div>
-        <div class="rw-body">
-          <div class="rw-meta"><span class="rw-badge">Day 2</span><span class="rw-date">Saturday 27 March</span></div>
-          <h3>The Unraveling</h3>
-          <p class="rw-sub">Entering the chrysalis</p>
-          <p class="rw-text">You soften your grip on who you have been. Through somatic practice, energy activation and ritual, old identities and expectations begin to dissolve. The nervous system exhales.</p>
-        </div>
-      </article>
-      <article class="rw-card c-brown rv">
-        <div class="rw-img"><img src="images/overivew-3-woman-with-arms-open.jpg" alt="A woman with arms open in dappled forest light" loading="lazy"></div>
-        <div class="rw-body">
-          <div class="rw-meta"><span class="rw-badge">Day 3</span><span class="rw-date">Sunday 28 March</span></div>
-          <h3>The Knowing</h3>
-          <p class="rw-sub">The wings remember the sky</p>
-          <p class="rw-text">Sacred silence, nature immersion and the wisdom of the animals. You learn to trust your body, your womb and your intuition again. The answers have never lived outside of you.</p>
-        </div>
-      </article>
-      <article class="rw-card c-olive rv">
-        <div class="rw-img"><img src="images/sijwa-project-hands-with-beads.jpg" alt="Hands sharing handmade beadwork from the Sijwa Project" loading="lazy"></div>
-        <div class="rw-body">
-          <div class="rw-meta"><span class="rw-badge">Day 4</span><span class="rw-date">Monday 29 March</span></div>
-          <h3>The Alchemy</h3>
-          <p class="rw-sub">Imaginal cells awakening</p>
-          <p class="rw-text">A day devoted to creativity, beauty and conscious creation. Through making, storytelling and sisterhood you discover that nothing is wasted. Even the broken pieces can become art.</p>
-        </div>
-      </article>
-      <article class="rw-card c-terra rv">
-        <div class="rw-img"><img src="images/wild-woman-retreat-elegant-boho-woman.jpg" alt="A woman in a flowing kimono at golden hour" loading="lazy"></div>
-        <div class="rw-body">
-          <div class="rw-meta"><span class="rw-badge">Day 5</span><span class="rw-date">Tuesday 30 March</span></div>
-          <h3>The Rapture</h3>
-          <p class="rw-sub">Opening the wings</p>
-          <p class="rw-text">You claim your sacred yes and your sacred no. A blessing for the woman you have become, then the closing Unmasked Ball on a private wild island.</p>
-        </div>
-      </article>
-      <div class="depart rv">
-        <div><span class="rw-date">Wednesday 31 March</span><p>You return to the world as the woman who emerged.</p></div>
-        <a href="#begin" class="btn btn-outline">Request my place</a>
+    <div class="j-head rv">
+      <div>
+        <p class="eyebrow">Five days, each with one theme</p>
+        <h2 class="sh">Five days. <em>Four thresholds.</em></h2>
       </div>
+      <p class="intro">The passage follows the African Monarch butterfly through her metamorphosis. You arrive, then cross four thresholds, one each day.</p>
     </div>
-
-    <div class="woven rv">
-      <p class="eyebrow">Woven through every day</p>
-      <p>Sunrise game drives, boat cruises, barefoot bush walks, yoga at Horseshoe Bend, and a visit to the Sijwa Project. Some rituals stay inside the retreat.</p>
+    <div class="j-grid rv">
+      <article class="jd c-slate">
+        <figure><img src="images/overivew-1-woman-elegant-feet.jpg" alt="Bare feet walking through golden grass" loading="lazy"><span class="dn">Day 1</span></figure>
+        <div class="jd-body"><span class="when">Friday 26 March</span><h3>Arrival</h3><p class="sub">Received on the riverbank</p><p class="t">A road through Chobe, then a boat up the Kwando. You settle into the land and into the circle.</p></div>
+      </article>
+      <article class="jd c-forest">
+        <figure><img src="images/overivew-2-woman-sitting-cross-legged.jpg" alt="A woman sitting cross-legged beside candles" loading="lazy"><span class="dn">Day 2</span></figure>
+        <div class="jd-body"><span class="when">Saturday 27 March</span><h3>The Unraveling</h3><p class="sub">Entering the chrysalis</p><p class="t">You soften your grip on who you have been. Through somatic practice, energy activation and ritual, old identities and expectations begin to dissolve. The nervous system exhales.</p></div>
+      </article>
+      <article class="jd c-brown">
+        <figure><img src="images/overivew-3-woman-with-arms-open.jpg" alt="A woman with arms open in dappled forest light" loading="lazy"><span class="dn">Day 3</span></figure>
+        <div class="jd-body"><span class="when">Sunday 28 March</span><h3>The Knowing</h3><p class="sub">The wings remember the sky</p><p class="t">Sacred silence, nature immersion and the wisdom of the animals. You learn to trust your body, your womb and your intuition again. The answers have never lived outside of you.</p></div>
+      </article>
+      <article class="jd c-olive">
+        <figure><img src="images/sijwa-project-hands-with-beads.jpg" alt="Hands sharing handmade beadwork from the Sijwa Project" loading="lazy"><span class="dn">Day 4</span></figure>
+        <div class="jd-body"><span class="when">Monday 29 March</span><h3>The Alchemy</h3><p class="sub">Imaginal cells awakening</p><p class="t">A day devoted to creativity, beauty and conscious creation. Through making, storytelling and sisterhood you discover that nothing is wasted. Even the broken pieces can become art.</p></div>
+      </article>
+      <article class="jd c-terra">
+        <figure><img src="images/wild-woman-retreat-elegant-boho-woman.jpg" alt="A woman in a flowing kimono at golden hour" loading="lazy"><span class="dn">Day 5</span></figure>
+        <div class="jd-body"><span class="when">Tuesday 30 March</span><h3>The Rapture</h3><p class="sub">Opening the wings</p><p class="t">You claim your sacred yes and your sacred no. A blessing for the woman you have become, then the closing Unmasked Ball on a private wild island.</p></div>
+      </article>
+    </div>
+    <p class="swipe-hint" style="margin-bottom:6px">Swipe through all five days</p>
+    <div class="j-foot rv">
+      <div><span class="k">Wednesday 31 March</span><p class="ret">You return to the world as the woman who emerged.</p></div>
+      <div><span class="k">Woven through every day</span><p class="wov">Sunrise game drives, boat cruises, barefoot bush walks, yoga at Horseshoe Bend, and a visit to the Sijwa Project. Some rituals stay inside the retreat.</p></div>
+      <a href="#begin" class="btn">Request my place</a>
     </div>
   </div>
 </section>
@@ -604,12 +584,12 @@ footer p{font-family:var(--sans);font-size:12px;letter-spacing:.04em}
     <h2 class="sh rv" style="margin-top:14px">Portraits of the <em>Wild Woman</em></h2>
     <div class="divider rv"><i></i></div>
     <div class="p-grid">
-      <article class="p-card rv"><figure><img src="images/wild-woman-retreat-boho-woman-in-bush.jpg" alt="" loading="lazy"></figure><span class="n" aria-hidden="true">01</span><h3>A woman who trusts herself.</h3><p>You stop seeking answers from everyone around you.</p></article>
-      <article class="p-card rv"><figure><img src="images/wild-woman-retreat-woman-with-arms-open.jpg" alt="" loading="lazy"></figure><span class="n" aria-hidden="true">02</span><h3>A woman who feels deeply alive.</h3><p>No longer postponing happiness for some future destination.</p></article>
-      <article class="p-card rv"><figure><img src="images/wild-woman-what-to-pack-01-boho-jewels.jpg" alt="" loading="lazy"></figure><span class="n" aria-hidden="true">03</span><h3>A woman connected to her creative power.</h3><p>Your life becomes a work of art, made through devotion and not force.</p></article>
-      <article class="p-card rv"><figure><img src="images/wild-woman-close-up-elegant-feet-walking.jpg" alt="" loading="lazy"></figure><span class="n" aria-hidden="true">04</span><h3>A woman at home in her body.</h3><p>Living from peace and presence, not stress and survival.</p></article>
-      <article class="p-card rv"><figure><img src="images/wild-woman-retreat-beautiful-boho-woman.jpg" alt="" loading="lazy"></figure><span class="n" aria-hidden="true">05</span><h3>A woman who embraces every season.</h3><p>Ageing is not a diminishment. Menopause is not an ending.</p></article>
-      <article class="p-card rv"><figure><img src="images/wild-woman-retreat-boho-woman-in-bush-1.jpg" alt="" loading="lazy"></figure><span class="n" aria-hidden="true">06</span><h3>A woman who belongs.</h3><p>To herself, to the earth, and to a circle of women.</p></article>
+      <article class="p-card rv"><figure><img src="images/wild-woman-retreat-boho-woman-in-bush.jpg" alt="" loading="lazy"></figure><div class="p-head"><span class="n" aria-hidden="true">01</span><h3>A woman who trusts herself.</h3></div><p>You stop seeking answers from everyone around you.</p></article>
+      <article class="p-card rv"><figure><img src="images/wild-woman-retreat-woman-with-arms-open.jpg" alt="" loading="lazy"></figure><div class="p-head"><span class="n" aria-hidden="true">02</span><h3>A woman who feels deeply alive.</h3></div><p>No longer postponing happiness for some future destination.</p></article>
+      <article class="p-card rv"><figure><img src="images/wild-woman-what-to-pack-01-boho-jewels.jpg" alt="" loading="lazy"></figure><div class="p-head"><span class="n" aria-hidden="true">03</span><h3>A woman connected to her creative power.</h3></div><p>Your life becomes a work of art, made through devotion and not force.</p></article>
+      <article class="p-card rv"><figure><img src="images/wild-woman-close-up-elegant-feet-walking.jpg" alt="" loading="lazy"></figure><div class="p-head"><span class="n" aria-hidden="true">04</span><h3>A woman at home in her body.</h3></div><p>Living from peace and presence, not stress and survival.</p></article>
+      <article class="p-card rv"><figure><img src="images/wild-woman-retreat-beautiful-boho-woman.jpg" alt="" loading="lazy"></figure><div class="p-head"><span class="n" aria-hidden="true">05</span><h3>A woman who embraces every season.</h3></div><p>Ageing is not a diminishment. Menopause is not an ending.</p></article>
+      <article class="p-card rv"><figure><img src="images/wild-woman-retreat-boho-woman-in-bush-1.jpg" alt="" loading="lazy"></figure><div class="p-head"><span class="n" aria-hidden="true">06</span><h3>A woman who belongs.</h3></div><p>To herself, to the earth, and to a circle of women.</p></article>
     </div>
     <p class="swipe-hint">Swipe to see all six</p>
   </div>
