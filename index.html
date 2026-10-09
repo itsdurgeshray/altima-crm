@@ -210,27 +210,23 @@ h1,h2,h3,blockquote{text-wrap:balance}
 
 /* ---------- five days: one-screen column layout ---------- */
 .journey{background:var(--sand);padding:clamp(52px,5vw,64px) 0}
-.j-head{display:grid;grid-template-columns:1.25fr 1fr;gap:clamp(24px,5vw,80px);align-items:end}
-@media (min-width:1100px){.j-head .sh{white-space:nowrap}}
-.j-head .sh{text-align:left;margin-top:10px;font-size:clamp(32px,3.4vw,44px)}
-.j-head .intro{color:#4a463f;letter-spacing:.02em;font-size:19px;line-height:1.55;border-left:1px solid var(--gold-soft);padding-left:28px}
-.j-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-top:28px}
-.jd{border-radius:18px;overflow:hidden;color:var(--paper);display:flex;flex-direction:column}
-.jd figure{position:relative;height:clamp(110px,9.2vw,136px);flex:none}
-.jd figure img{width:100%;height:100%;object-fit:cover}
-.jd .dn{position:absolute;left:14px;top:12px;font-family:var(--sans);font-size:10px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:#2B2B2B;background:rgba(255,255,255,.92);padding:5px 11px;border-radius:999px}
-.jd-body{padding:16px 18px 20px;display:flex;flex-direction:column;flex:1}
-.jd .when{font-family:var(--sans);font-size:10.5px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;color:var(--on-dark-muted)}
-.jd h3{font-family:var(--display);font-weight:400;font-size:clamp(21px,1.75vw,25px);line-height:1.2;color:var(--paper);margin-top:8px}
-.jd .sub{font-family:var(--serif);font-style:italic;font-weight:500;font-size:17px;line-height:1.3;color:var(--gold);margin-top:4px}
-.jd p.t{font-size:15.5px;line-height:1.45;letter-spacing:.01em;color:var(--on-dark);margin-top:10px}
-.c-slate{background:var(--slate)}.c-forest{background:var(--forest)}.c-brown{background:var(--brown)}.c-olive{background:var(--olive)}.c-terra{background:var(--terra)}
-.j-foot{display:grid;grid-template-columns:1.1fr 1.4fr auto;gap:28px;align-items:center;margin-top:12px;background:#fff;border:1px solid rgba(201,154,75,.35);border-radius:18px;padding:16px 24px}
-.j-foot .k{display:block;font-family:var(--sans);font-size:10.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#9a6f28}
-.j-foot .ret{font-family:var(--display);font-size:19px;line-height:1.3;color:var(--text);margin-top:4px}
-.j-foot .wov{font-size:16.5px;line-height:1.45;color:#4a463f;margin-top:4px;letter-spacing:.01em}
-.j-foot>div+div{border-left:1px solid rgba(201,154,75,.25);padding-left:28px}
-.j-foot .btn{font-size:16px;padding:14px 24px;white-space:nowrap}
+.j-wrap{display:grid;grid-template-columns:4.4fr 7.6fr;gap:clamp(32px,5vw,72px);align-items:stretch}
+.j-img{position:relative;border-radius:var(--radius);overflow:hidden;min-height:520px}
+.j-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:12% 50%}
+.j-img::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(10,9,7,.78) 0%,rgba(10,9,7,0) 55%)}
+.j-img p{position:absolute;left:0;right:0;bottom:0;z-index:1;padding:28px 30px;color:var(--paper);font-size:19px;line-height:1.5;font-style:italic}
+.j-side .sh{text-align:left;margin-top:8px;font-size:clamp(32px,3.2vw,42px)}
+@media (min-width:1100px){.j-side .sh{white-space:nowrap}}
+.j-list{list-style:none;margin-top:18px;border-top:1px solid rgba(201,154,75,.35)}
+.j-list li{display:grid;grid-template-columns:84px 1fr;gap:16px;padding:13px 0 14px;border-bottom:1px solid rgba(43,43,43,.1)}
+.j-when b{display:block;font-family:var(--serif);font-style:italic;font-weight:400;font-size:38px;line-height:.9;color:var(--gold)}
+.j-when span{display:block;margin-top:6px;font-family:var(--sans);font-size:10px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.j-list h3{font-family:var(--display);font-weight:400;font-size:22px;line-height:1.25;color:#1d1d1b}
+.j-list h3 i{font-family:var(--serif);font-style:italic;font-weight:500;font-size:18px;color:#9a6f28;margin-left:8px}
+.j-list p{font-size:16px;line-height:1.48;color:#55514a;margin-top:4px;letter-spacing:.01em}
+.j-note{margin-top:16px;font-size:16px;line-height:1.5;color:#55514a}
+.j-note b{font-family:var(--sans);font-size:10px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#9a6f28;margin-right:8px}
+.j-note+.j-note{margin-top:6px}
 
 /* ---------- CTA band ---------- */
 .cta-band{position:relative;color:#fff;text-align:center;padding:clamp(110px,14vw,170px) 0;isolation:isolate;overflow:hidden}
@@ -343,13 +339,8 @@ footer p{font-family:var(--sans);font-size:12px;letter-spacing:.04em}
   .facts li:nth-child(even){padding-left:18px;border-left:1px solid rgba(201,154,75,.14)}
   .facts li:nth-child(-n+2){border-top:0}
   .pull,.begin-grid{grid-template-columns:1fr}
-  .j-head{grid-template-columns:1fr;gap:16px}
-  .j-head .intro{font-size:18px;padding-left:18px}
-  .j-grid{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:minmax(260px,42%);overflow-x:auto;scroll-snap-type:x mandatory;margin:32px -24px 0;padding:0 24px 8px;scroll-padding:0 24px;scrollbar-width:none}
-  .j-grid::-webkit-scrollbar{display:none}
-  .jd{scroll-snap-align:start}
-  .j-foot{grid-template-columns:1fr;gap:16px}
-  .j-foot>div+div{border-left:0;padding-left:0;border-top:1px solid rgba(201,154,75,.25);padding-top:16px}
+  .j-wrap{grid-template-columns:1fr;gap:28px}
+  .j-img{min-height:260px}
   .pull img{min-height:320px}
   .tiles{grid-template-columns:1fr 1fr;grid-auto-rows:220px}
   .t1,.t2,.t3,.t4,.t5{grid-column:span 1;grid-row:span 1}
@@ -396,9 +387,10 @@ footer p{font-family:var(--sans);font-size:12px;letter-spacing:.04em}
   .figures{margin-top:48px}
   .fig{padding:24px 10px}
   .journey{padding:60px 0}
-  .j-grid{grid-auto-columns:80%;margin:28px -16px 0;padding:0 16px 8px;scroll-padding:0 16px}
-  .j-foot{padding:20px}
-  .j-foot .btn{width:100%}
+  .j-list li{grid-template-columns:62px 1fr;gap:12px}
+  .j-when b{font-size:32px}
+  .j-list h3 i{display:block;margin:2px 0 0}
+  .j-img p{font-size:17px;padding:22px}
   .cta-band{padding:96px 0}
   .cta-band .under{font-size:12px}
   /* portraits become a swipeable row */
@@ -528,41 +520,23 @@ footer p{font-family:var(--sans);font-size:12px;letter-spacing:.04em}
 
 <!-- ============ 5. FIVE DAYS ============ -->
 <section class="journey" id="journey">
-  <div class="wrap">
-    <div class="j-head rv">
-      <div>
-        <p class="eyebrow">Five days, each with one theme</p>
-        <h2 class="sh">Five days. <em>Four thresholds.</em></h2>
-      </div>
-      <p class="intro">The passage follows the African Monarch butterfly through her metamorphosis. You arrive, then cross four thresholds, one each day.</p>
-    </div>
-    <div class="j-grid rv">
-      <article class="jd c-slate">
-        <figure><img src="images/overivew-1-woman-elegant-feet.jpg" alt="Bare feet walking through golden grass" loading="lazy"><span class="dn">Day 1</span></figure>
-        <div class="jd-body"><span class="when">Friday 26 March</span><h3>Arrival</h3><p class="sub">Received on the riverbank</p><p class="t">A road through Chobe, then a boat up the Kwando. You settle into the land and into the circle.</p></div>
-      </article>
-      <article class="jd c-forest">
-        <figure><img src="images/overivew-2-woman-sitting-cross-legged.jpg" alt="A woman sitting cross-legged beside candles" loading="lazy"><span class="dn">Day 2</span></figure>
-        <div class="jd-body"><span class="when">Saturday 27 March</span><h3>The Unraveling</h3><p class="sub">Entering the chrysalis</p><p class="t">You soften your grip on who you have been. Through somatic practice, energy activation and ritual, old identities and expectations begin to dissolve. The nervous system exhales.</p></div>
-      </article>
-      <article class="jd c-brown">
-        <figure><img src="images/overivew-3-woman-with-arms-open.jpg" alt="A woman with arms open in dappled forest light" loading="lazy"><span class="dn">Day 3</span></figure>
-        <div class="jd-body"><span class="when">Sunday 28 March</span><h3>The Knowing</h3><p class="sub">The wings remember the sky</p><p class="t">Sacred silence, nature immersion and the wisdom of the animals. You learn to trust your body, your womb and your intuition again. The answers have never lived outside of you.</p></div>
-      </article>
-      <article class="jd c-olive">
-        <figure><img src="images/sijwa-project-hands-with-beads.jpg" alt="Hands sharing handmade beadwork from the Sijwa Project" loading="lazy"><span class="dn">Day 4</span></figure>
-        <div class="jd-body"><span class="when">Monday 29 March</span><h3>The Alchemy</h3><p class="sub">Imaginal cells awakening</p><p class="t">A day devoted to creativity, beauty and conscious creation. Through making, storytelling and sisterhood you discover that nothing is wasted. Even the broken pieces can become art.</p></div>
-      </article>
-      <article class="jd c-terra">
-        <figure><img src="images/wild-woman-retreat-elegant-boho-woman.jpg" alt="A woman in a flowing kimono at golden hour" loading="lazy"><span class="dn">Day 5</span></figure>
-        <div class="jd-body"><span class="when">Tuesday 30 March</span><h3>The Rapture</h3><p class="sub">Opening the wings</p><p class="t">You claim your sacred yes and your sacred no. A blessing for the woman you have become, then the closing Unmasked Ball on a private wild island.</p></div>
-      </article>
-    </div>
-    <p class="swipe-hint" style="margin-bottom:6px">Swipe through all five days</p>
-    <div class="j-foot rv">
-      <div><span class="k">Wednesday 31 March</span><p class="ret">You return to the world as the woman who emerged.</p></div>
-      <div><span class="k">Woven through every day</span><p class="wov">Sunrise game drives, boat cruises, barefoot bush walks, yoga at Horseshoe Bend, and a visit to the Sijwa Project. Some rituals stay inside the retreat.</p></div>
-      <a href="#begin" class="btn">Request my place</a>
+  <div class="wrap j-wrap">
+    <figure class="j-img rv">
+      <img src="images/wild-woman-retreat-woman-with-arms-open.jpg" alt="A woman with arms open in soft morning light" loading="lazy">
+      <p>The passage follows the African Monarch butterfly through her metamorphosis. You arrive, then cross four thresholds, one each day.</p>
+    </figure>
+    <div class="j-side rv">
+      <p class="eyebrow">Five days, each with one theme</p>
+      <h2 class="sh">Five days. <em>Four thresholds.</em></h2>
+      <ol class="j-list">
+        <li><div class="j-when"><b>01</b><span>Fri 26 Mar</span></div><div><h3>Arrival<i>Received on the riverbank</i></h3><p>A road through Chobe, then a boat up the Kwando. You settle into the land and into the circle.</p></div></li>
+        <li><div class="j-when"><b>02</b><span>Sat 27 Mar</span></div><div><h3>The Unraveling<i>Entering the chrysalis</i></h3><p>You soften your grip on who you have been. Through somatic practice, energy activation and ritual, old identities and expectations begin to dissolve. The nervous system exhales.</p></div></li>
+        <li><div class="j-when"><b>03</b><span>Sun 28 Mar</span></div><div><h3>The Knowing<i>The wings remember the sky</i></h3><p>Sacred silence, nature immersion and the wisdom of the animals. You learn to trust your body, your womb and your intuition again. The answers have never lived outside of you.</p></div></li>
+        <li><div class="j-when"><b>04</b><span>Mon 29 Mar</span></div><div><h3>The Alchemy<i>Imaginal cells awakening</i></h3><p>A day devoted to creativity, beauty and conscious creation. Through making, storytelling and sisterhood you discover that nothing is wasted. Even the broken pieces can become art.</p></div></li>
+        <li><div class="j-when"><b>05</b><span>Tue 30 Mar</span></div><div><h3>The Rapture<i>Opening the wings</i></h3><p>You claim your sacred yes and your sacred no. A blessing for the woman you have become, then the closing Unmasked Ball on a private wild island.</p></div></li>
+      </ol>
+      <p class="j-note"><b>Wed 31 Mar</b>You return to the world as the woman who emerged.</p>
+      <p class="j-note"><b>Every day</b>Sunrise game drives, boat cruises, barefoot bush walks, yoga at Horseshoe Bend, and a visit to the Sijwa Project. Some rituals stay inside the retreat.</p>
     </div>
   </div>
 </section>
